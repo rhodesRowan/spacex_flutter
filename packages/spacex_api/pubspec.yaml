@@ -1,0 +1,17 @@
+name: spacex_api
+description: A wrapper for the spacex api.
+publish_to: none
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  spacex_api_models:
+    path: ../spacex_api_models
+  json_annotation: ^4.8.0
+  retrofit: ^4.0.1
+
+dev_dependencies:
+  retrofit_generator: ^6.0.0+3
+  build_runner: '>=2.3.0 <4.0.0'
+  json_serializable: ^6.6.0
