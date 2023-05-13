@@ -1,11 +1,11 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'rockets.freezed.dart';
-part 'rockets.g.dart';
+part 'rocket.freezed.dart';
+part 'rocket.g.dart';
 
 @freezed
-class Rockets with _$Rockets {
-  const factory Rockets({
+class Rocket with _$Rocket {
+  const factory Rocket({
     required String id,
     required RocketSize height,
     required RocketSize diameter,
@@ -22,9 +22,9 @@ class Rockets with _$Rockets {
     required String company,
     required String wikipedia,
     required String description,
-  }) = _Rockets;
+  }) = _Rocket;
 
-  factory Rockets.fromJson(Map<String, dynamic> json) => _$RocketsFromJson(json);
+  factory Rocket.fromJson(Map<String, dynamic> json) => _$RocketFromJson(json);
 }
 
 @freezed

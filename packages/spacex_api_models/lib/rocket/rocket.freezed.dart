@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'rockets.dart';
+part of 'rocket.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,12 +14,12 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-Rockets _$RocketsFromJson(Map<String, dynamic> json) {
-  return _Rockets.fromJson(json);
+Rocket _$RocketFromJson(Map<String, dynamic> json) {
+  return _Rocket.fromJson(json);
 }
 
 /// @nodoc
-mixin _$Rockets {
+mixin _$Rocket {
   String get id => throw _privateConstructorUsedError;
   RocketSize get height => throw _privateConstructorUsedError;
   RocketSize get diameter => throw _privateConstructorUsedError;
@@ -42,13 +42,13 @@ mixin _$Rockets {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $RocketsCopyWith<Rockets> get copyWith => throw _privateConstructorUsedError;
+  $RocketCopyWith<Rocket> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $RocketsCopyWith<$Res> {
-  factory $RocketsCopyWith(Rockets value, $Res Function(Rockets) then) =
-      _$RocketsCopyWithImpl<$Res, Rockets>;
+abstract class $RocketCopyWith<$Res> {
+  factory $RocketCopyWith(Rocket value, $Res Function(Rocket) then) =
+      _$RocketCopyWithImpl<$Res, Rocket>;
   @useResult
   $Res call(
       {String id,
@@ -74,9 +74,9 @@ abstract class $RocketsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$RocketsCopyWithImpl<$Res, $Val extends Rockets>
-    implements $RocketsCopyWith<$Res> {
-  _$RocketsCopyWithImpl(this._value, this._then);
+class _$RocketCopyWithImpl<$Res, $Val extends Rocket>
+    implements $RocketCopyWith<$Res> {
+  _$RocketCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -197,10 +197,9 @@ class _$RocketsCopyWithImpl<$Res, $Val extends Rockets>
 }
 
 /// @nodoc
-abstract class _$$_RocketsCopyWith<$Res> implements $RocketsCopyWith<$Res> {
-  factory _$$_RocketsCopyWith(
-          _$_Rockets value, $Res Function(_$_Rockets) then) =
-      __$$_RocketsCopyWithImpl<$Res>;
+abstract class _$$_RocketCopyWith<$Res> implements $RocketCopyWith<$Res> {
+  factory _$$_RocketCopyWith(_$_Rocket value, $Res Function(_$_Rocket) then) =
+      __$$_RocketCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -230,10 +229,10 @@ abstract class _$$_RocketsCopyWith<$Res> implements $RocketsCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_RocketsCopyWithImpl<$Res>
-    extends _$RocketsCopyWithImpl<$Res, _$_Rockets>
-    implements _$$_RocketsCopyWith<$Res> {
-  __$$_RocketsCopyWithImpl(_$_Rockets _value, $Res Function(_$_Rockets) _then)
+class __$$_RocketCopyWithImpl<$Res>
+    extends _$RocketCopyWithImpl<$Res, _$_Rocket>
+    implements _$$_RocketCopyWith<$Res> {
+  __$$_RocketCopyWithImpl(_$_Rocket _value, $Res Function(_$_Rocket) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -256,7 +255,7 @@ class __$$_RocketsCopyWithImpl<$Res>
     Object? wikipedia = null,
     Object? description = null,
   }) {
-    return _then(_$_Rockets(
+    return _then(_$_Rocket(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -327,8 +326,8 @@ class __$$_RocketsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Rockets implements _Rockets {
-  const _$_Rockets(
+class _$_Rocket implements _Rocket {
+  const _$_Rocket(
       {required this.id,
       required this.height,
       required this.diameter,
@@ -346,8 +345,8 @@ class _$_Rockets implements _Rockets {
       required this.wikipedia,
       required this.description});
 
-  factory _$_Rockets.fromJson(Map<String, dynamic> json) =>
-      _$$_RocketsFromJson(json);
+  factory _$_Rocket.fromJson(Map<String, dynamic> json) =>
+      _$$_RocketFromJson(json);
 
   @override
   final String id;
@@ -387,14 +386,14 @@ class _$_Rockets implements _Rockets {
 
   @override
   String toString() {
-    return 'Rockets(id: $id, height: $height, diameter: $diameter, mass: $mass, name: $name, type: $type, active: $active, stages: $stages, boosters: $boosters, costPerLaunch: $costPerLaunch, successRatePercentage: $successRatePercentage, firstFlight: $firstFlight, country: $country, company: $company, wikipedia: $wikipedia, description: $description)';
+    return 'Rocket(id: $id, height: $height, diameter: $diameter, mass: $mass, name: $name, type: $type, active: $active, stages: $stages, boosters: $boosters, costPerLaunch: $costPerLaunch, successRatePercentage: $successRatePercentage, firstFlight: $firstFlight, country: $country, company: $company, wikipedia: $wikipedia, description: $description)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Rockets &&
+            other is _$_Rocket &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.height, height) || other.height == height) &&
             (identical(other.diameter, diameter) ||
@@ -444,19 +443,19 @@ class _$_Rockets implements _Rockets {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_RocketsCopyWith<_$_Rockets> get copyWith =>
-      __$$_RocketsCopyWithImpl<_$_Rockets>(this, _$identity);
+  _$$_RocketCopyWith<_$_Rocket> get copyWith =>
+      __$$_RocketCopyWithImpl<_$_Rocket>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_RocketsToJson(
+    return _$$_RocketToJson(
       this,
     );
   }
 }
 
-abstract class _Rockets implements Rockets {
-  const factory _Rockets(
+abstract class _Rocket implements Rocket {
+  const factory _Rocket(
       {required final String id,
       required final RocketSize height,
       required final RocketSize diameter,
@@ -475,9 +474,9 @@ abstract class _Rockets implements Rockets {
       required final String country,
       required final String company,
       required final String wikipedia,
-      required final String description}) = _$_Rockets;
+      required final String description}) = _$_Rocket;
 
-  factory _Rockets.fromJson(Map<String, dynamic> json) = _$_Rockets.fromJson;
+  factory _Rocket.fromJson(Map<String, dynamic> json) = _$_Rocket.fromJson;
 
   @override
   String get id;
@@ -516,7 +515,7 @@ abstract class _Rockets implements Rockets {
   String get description;
   @override
   @JsonKey(ignore: true)
-  _$$_RocketsCopyWith<_$_Rockets> get copyWith =>
+  _$$_RocketCopyWith<_$_Rocket> get copyWith =>
       throw _privateConstructorUsedError;
 }
 

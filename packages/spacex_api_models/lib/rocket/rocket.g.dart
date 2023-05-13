@@ -1,12 +1,12 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'rockets.dart';
+part of 'rocket.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Rockets _$$_RocketsFromJson(Map<String, dynamic> json) => _$_Rockets(
+_$_Rocket _$$_RocketFromJson(Map<String, dynamic> json) => _$_Rocket(
       id: json['id'] as String,
       height: RocketSize.fromJson(json['height'] as Map<String, dynamic>),
       diameter: RocketSize.fromJson(json['diameter'] as Map<String, dynamic>),
@@ -25,8 +25,7 @@ _$_Rockets _$$_RocketsFromJson(Map<String, dynamic> json) => _$_Rockets(
       description: json['description'] as String,
     );
 
-Map<String, dynamic> _$$_RocketsToJson(_$_Rockets instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$$_RocketToJson(_$_Rocket instance) => <String, dynamic>{
       'id': instance.id,
       'height': instance.height,
       'diameter': instance.diameter,

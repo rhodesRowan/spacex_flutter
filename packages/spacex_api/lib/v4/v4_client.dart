@@ -11,4 +11,8 @@ abstract class v4Client {
   /// Get news articles recently written about SpaceX
   @GET('/history')
   Future<List<NewsArticle>> getNewsArticles();
+
+  /// Get information on Rockets in the SpaceX fleet
+  @GET('/rockets')
+  Future<List<Rocket>> getRockets();
 }
